@@ -14,4 +14,5 @@ if(isset($_POST['login'])){
   $_SESSION["email"] = $_POST["email"];
   echo $user->login($pdo);
 }
+
 ?>
