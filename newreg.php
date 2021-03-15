@@ -15,14 +15,6 @@
             <input type="text" id="pass" name="pass"><br>
             <label for="residence">City of residence:</label>
             <input type="text" id="res" name="res"><br>
-            <div>
-              <form method="POST" action="" enctype="multipart/form-data"> 
-            <input type="file" name="uploadfile" value="" /> 
-            <div> 
-                <button type="submit" name="upload"> UPLOAD </button> 
-            </div> 
-            </form>
-            </div>
             <button type="submit" name="register">Register</button> 
             
           </form>

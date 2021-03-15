@@ -11,7 +11,7 @@
             <input type="text" id="email" name="email"><br>
             <label for="password">Password:</label>
             <input type="text" id="pass" name="pass"><br>
-            <button type="submit" name="enter">Enter</button>
+            <button type="submit" name="login">Enter</button>
             <a href="/Users/mohamedabdullahi/Desktop/School/IAPProject/newreg.html">Create new account</a>
             
           </form>

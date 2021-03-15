@@ -43,7 +43,7 @@ class User{
 public function register($pdo){
         $passwordHash = password_hash($this->getPassword(),PASSWORD_DEFAULT);
         try{
-        $stmt = $pdo->prepare ('INSERT INTO Registration (Full_Name,Email,Residence,Password) VALUES(?,?,?,?)');
+        $stmt = $pdo->prepare ("INSERT INTO Registration (Full_Name,Email,Residence,Password) VALUES(?,?,?,?)");
         $stmt->execute([$this->getName(),$this->getEmail(),$this->getResidence(),$passwordHash]);
         return "Registration was successful";
         }

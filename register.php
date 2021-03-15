@@ -3,9 +3,9 @@ include_once 'user.php';
 include_once 'connection.php';
 $con = new DBConnector();
 $pdo = $con->connectToDB;
-if(isset($_POST['register']));{
+if(isset($_POST['register'])){
      $name=$_POST['name'];
-     $email=$_POST['email'];;
+     $email=$_POST['email'];
      $password=$_POST['pass'];
      $residence=$_POST['res'];
      $user = new User();
@@ -14,9 +14,11 @@ if(isset($_POST['register']));{
      $user->setPassword($password);
      $user->setResidence($residence);
      $user->register($pdo);
-     echo '<script>location.href="homepage.php"</script>';;
+     echo '<script>location.href="homepage.php"</script>';
 }
-
+else{
+     echo "error";
+}
 
 
 ?>
