@@ -24,3 +24,12 @@
 html{
     background-color: aquamarine;
 }
+.changepassword{
+    margin: 0 auto;
+    text-align: center;
+    height: 800px;
+    widows: 500px; ;
+    font: 100 white;
+    position: relative;
+    top: 30%;
+}
